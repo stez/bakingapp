@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/activity_widget_conf_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/widget_conf_label_margin"
+        android:layout_marginTop="@dimen/widget_conf_label_margin"
+        android:text="@string/widget_conf_label"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/widget_conf_label_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/activity_widget_conf_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/widget_conf_spinner_margin"
+        android:layout_marginStart="@dimen/widget_conf_spinner_margin"
+        android:layout_marginTop="@dimen/widget_conf_spinner_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_widget_conf_label" />
+
+    <Button
+        android:id="@+id/activity_widget_conf_go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/widget_conf_button_margin"
+        android:layout_marginTop="@dimen/widget_conf_button_margin"
+        android:text="@string/widget_conf_button_create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_widget_conf_spinner" />
+</android.support.constraint.ConstraintLayout>

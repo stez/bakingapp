@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/list_element_ingredient_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/list_element_ingredient_description_margin"
+        android:layout_marginStart="@dimen/list_element_ingredient_description_margin"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/list_element_ingredient_description_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/list_element_ingredient_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ingredient description " />
+
+    <TextView
+        android:id="@+id/list_element_ingredient_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/list_element_ingredient_measure_margin"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/list_element_ingredient_measure_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="CUP" />
+
+    <TextView
+        android:id="@+id/list_element_ingredient_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/list_element_ingredient_quantity_margin"
+        android:fontFamily="monospace"
+        android:textSize="@dimen/list_element_ingredient_quantity_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/list_element_ingredient_measure"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="5" />
+
+</android.support.constraint.ConstraintLayout>

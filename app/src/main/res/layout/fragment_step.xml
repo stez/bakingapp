@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/fragment_step_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_step_normal_portrait_exoplayer_height"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:resize_mode="fit" />
+
+        <TextView
+            android:id="@+id/fragment_step_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_step_description_margin"
+            android:layout_marginEnd="@dimen/fragment_step_description_margin"
+            android:layout_marginStart="@dimen/fragment_step_description_margin"
+            android:layout_marginTop="@dimen/fragment_step_description_margin"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fragment_step_description_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_step_player"
+            tools:text="2. Combine the cake flour, 400 grams (2 cups) of sugar, baking powder, and 1 teaspoon of salt in the bowl of a stand mixer. Using the paddle attachment, beat at low speed until the dry ingredients are mixed together, about one minute" />
+
+        <ImageView
+            android:id="@+id/fragment_step_no_video_imageview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/fragment_step_normal_portrait_exoplayer_height"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_step_player"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_broken_image_white_24dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+

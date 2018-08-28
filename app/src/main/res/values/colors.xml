@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4081</color>
+    <color name="colorPrimaryLight">#ff79b0</color>
+    <color name="colorPrimaryLightTransparent">#b4ff79b0</color>
+    <color name="colorPrimaryDark">#c60055</color>
+    <color name="colorSecondary">#ffee58</color>
+    <color name="colorSecondaryLight">#ffff8b</color>
+    <color name="colorSecondaryLightTrasparent">#b4ffff8b</color>
+    <color name="colorSecondaryDark">#c9bc1f</color>
+
+    <color name="backgroundColor">#90a7a7a7</color>
+    <color name="backgroundPrimaryColorTransparent">#64c8e6c9</color>
+
+    <color name="backgroundColorLight">#d7ededed</color>
+    <color name="backgroundColorDark">#b0737373</color>
+    <color name="toolbarBackgroundTransparent">#78353535</color>
+</resources>

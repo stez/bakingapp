@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="step_navigation_buttons_margin">8dp</dimen>
+    <dimen name="widget_conf_label_size">18sp</dimen>
+    <dimen name="widget_conf_label_margin">8dp</dimen>
+    <dimen name="widget_conf_spinner_margin">8dp</dimen>
+    <dimen name="widget_conf_button_margin">8dp</dimen>
+    <dimen name="fragment_recipe_ingredients_title_margin">8dp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="separator_margin">8dp</dimen>
+    <dimen name="fragment_recipe_ingredients_rw_margin">8dp</dimen>
+    <dimen name="fragment_recipe_steps_title_margin">8dp</dimen>
+    <dimen name="separator_width">0dp</dimen>
+    <dimen name="fragment_recipe_steps_rw_margin">8dp</dimen>
+    <dimen name="fragment_step_normal_portrait_exoplayer_height">240dp</dimen>
+    <dimen name="fragment_step_description_margin">8dp</dimen>
+    <dimen name="fragment_step_description_text_size">18sp</dimen>
+    <dimen name="list_element_ingredient_description_margin">8dp</dimen>
+    <dimen name="list_element_ingredient_description_text_size">12sp</dimen>
+    <dimen name="list_element_ingredient_measure_margin">8dp</dimen>
+    <dimen name="list_element_ingredient_measure_text_size">12sp</dimen>
+    <dimen name="list_element_ingredient_quantity_margin">8dp</dimen>
+    <dimen name="list_element_ingredient_quantity_text_size">14sp</dimen>
+    <dimen name="list_element_recipe_card_margin">4dp</dimen>
+    <dimen name="list_element_recipe_image_height">182dp</dimen>
+    <dimen name="list_element_recipe_title_padding">8dp</dimen>
+    <dimen name="list_element_recipe_title_text_size">30sp</dimen>
+    <dimen name="list_element_step_title_margin">8dp</dimen>
+    <dimen name="list_element_step_arrow_right_margin">8dp</dimen>
+    <dimen name="list_element_widget_ingredient_description_margin">8dp</dimen>
+    <dimen name="list_element_widget_ingredient_description_text_size">12sp</dimen>
+    <dimen name="list_element_widget_ingredient_mesure_margin">8dp</dimen>
+    <dimen name="list_element_widget_ingredient_mesure_text_size">12sp</dimen>
+    <dimen name="list_element_widget_ingredient_quantity_margin">8dp</dimen>
+    <dimen name="list_element_widget_ingredient_quantity_text_size">14sp</dimen>
+    <dimen name="widget_ingredients_list_recipe_name_text_size">20sp</dimen>
+    <dimen name="widget_ingredients_list_recipe_name_padding">8dp</dimen>
+    <dimen name="fragment_step_normal_land_exoplayer_height">300dp</dimen>
+</resources>

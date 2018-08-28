@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/list_element_widget_ingredient_description"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/list_element_widget_ingredient_description_margin"
+        android:layout_marginStart="@dimen/list_element_widget_ingredient_description_margin"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/list_element_widget_ingredient_description_text_size"
+        tools:text="Ingredient description " />
+
+    <TextView
+        android:id="@+id/list_element_widget_ingredient_mesure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/list_element_widget_ingredient_mesure_margin"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/list_element_widget_ingredient_mesure_text_size"
+        tools:text="CUP" />
+
+    <TextView
+        android:id="@+id/list_element_widget_ingredient_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/list_element_widget_ingredient_quantity_margin"
+        android:fontFamily="monospace"
+        android:textSize="@dimen/list_element_widget_ingredient_quantity_text_size"
+        android:textStyle="bold"
+        tools:text="5" />
+
+</LinearLayout>
