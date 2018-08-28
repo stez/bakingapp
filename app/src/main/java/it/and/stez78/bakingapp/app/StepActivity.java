@@ -58,28 +58,21 @@ public class StepActivity extends AppCompatActivity implements HasSupportFragmen
             viewModel.getStepsLiveData(recipe.getId()).observe(this, steps -> {
                 viewModel.setSteps(steps);
                 viewModel.setCurrentStep(currentStepIndex);
-                setupUI(recipe);
+                setupUI();
             });
         } else {
-            setupUI(recipe);
+            setupUI();
         }
     }
 
-    private void setupUI(Recipe recipe) {
-        if (isLargeDisplayLandscape()) {
-            Intent recipeIntent = new Intent(this, RecipeActivity.class);
-            recipeIntent.putExtra(RecipeActivity.RECIPE_KEY, recipe);
-            recipeIntent.putExtra(RecipeActivity.CURRENT_STEP_KEY, viewModel.getCurrentStepIndex());
-            startActivity(recipeIntent);
-        } else {
-            setupBottomNavigation();
-            fillActionBarTitle();
-            StepFragment stepFragment = new StepFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction()
-                    .replace(R.id.activity_step_container, stepFragment)
-                    .commit();
-        }
+    private void setupUI() {
+        setupBottomNavigation();
+        fillActionBarTitle();
+        StepFragment stepFragment = new StepFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.activity_step_container, stepFragment)
+                .commit();
     }
 
     private void setupBottomNavigation() {
@@ -104,10 +97,6 @@ public class StepActivity extends AppCompatActivity implements HasSupportFragmen
             }
             actionBar.setTitle(title);
         }
-    }
-
-    private boolean isLargeDisplayLandscape() {
-        return (findViewById(R.id.activity_step_landscape_large) != null);
     }
 
     @OnClick(R.id.activity_step_next_button)

@@ -89,7 +89,7 @@ public class SharedRecipeViewModel extends ViewModel {
     }
 
     public Step getCurrentStep() {
-        int current = currentStep.getValue();
+        int current = currentStep.getValue() == null ? 0 : currentStep.getValue();
         return steps.get(current);
     }
 

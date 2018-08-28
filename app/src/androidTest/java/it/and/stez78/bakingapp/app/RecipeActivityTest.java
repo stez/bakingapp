@@ -1,6 +1,7 @@
-package it.and.stez78.bakingapp;
+package it.and.stez78.bakingapp.app;
 
 import android.content.Intent;
+import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.widget.TextView;
@@ -10,6 +11,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import it.and.stez78.bakingapp.R;
 import it.and.stez78.bakingapp.app.RecipeActivity;
 import it.and.stez78.bakingapp.model.Recipe;
 
@@ -45,7 +47,7 @@ public class RecipeActivityTest {
 
     @Test
     public void recipeActivityOpensAndToolbarTitleIsSet() {
-        onView(allOf(instanceOf(TextView.class), withParent(withId(R.id.activity_recipe_toolbar))))
+        onView(allOf(instanceOf(TextView.class), withParent(ViewMatchers.withId(R.id.activity_recipe_toolbar))))
                 .check(matches(withText(RECIPE_NAME)));
     }
 }
